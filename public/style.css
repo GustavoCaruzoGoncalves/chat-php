@@ -1,0 +1,128 @@
+/* Estilize o container do chat */
+#chatContainer {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilize a área de chat */
+#chat {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Estilize as mensagens no chat */
+#chat p {
+    margin: 5px 0 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: auto; /* Ajuste automático ao tamanho do conteúdo */
+    word-wrap: break-word; /* Quebra de palavra para ajustar ao tamanho do texto */
+}
+
+/* Estilize as mensagens do usuário */
+#chat .user-message {
+    background-color: #007bff; /* Cor de fundo para mensagens do usuário */
+    color: #fff; /* Cor do texto para mensagens do usuário */
+    text-align: right; /* Alinha o texto à direita para mensagens do usuário */
+}
+
+/* Estilize as mensagens do outro usuário */
+#chat .other-user-message {
+    background-color: #ccc; /* Cor de fundo para mensagens do outro usuário */
+    color: #000; /* Cor do texto para mensagens do outro usuário */
+    text-align: left; /* Alinha o texto à esquerda para mensagens do outro usuário */
+}
+
+/* Estilize a entrada de mensagem */
+#messageInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: auto;
+    resize: none;
+}
+
+/* Estilize o botão de enviar */
+#sendMessage {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilize o campo de nome */
+#nameInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: auto;
+    resize: none;
+}
+
+/* Estilize o botão de entrar */
+#enterChat {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#enterChat:hover {
+    background-color: #0056b3;
+}
+/* ... (o restante do seu CSS permanece o mesmo) ... */
+
+/* Estilize o botão de exclusão de mensagem */
+.delete-message {
+    margin-left: 10px;
+    background-color: #ff6347; /* Cor de fundo para o botão de exclusão */
+    color: #fff; /* Cor do texto para o botão de exclusão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.delete-message:hover {
+    background-color: #ff0000;
+}
+
+/* ... (seu CSS existente) ... */
+
+/* Estilize o botão de exclusão de mensagem do usuário */
+.user-message .delete-message {
+    background-color: #ff6347; /* Cor de fundo para o botão de exclusão */
+    color: #fff; /* Cor do texto para o botão de exclusão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.user-message .delete-message:hover {
+    background-color: #ff0000;
+}
